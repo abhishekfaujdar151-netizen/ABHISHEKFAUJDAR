@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PDFMaster — Free online PDF tools. Merge, split, compress, convert, sign, and edit PDFs securely in your browser.">
+  <meta name="keywords" content="PDF editor, merge PDF, split PDF, compress PDF, convert PDF, online PDF tools">
+  <meta name="author" content="PDFMaster">
+  <meta name="robots" content="index, follow">
+  <title>PDFMaster — Free Online PDF Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="PDFMaster Home">
+        <span class="nav__logo-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#logoGrad)"/><path d="M10 8h8l6 6v10a2 2 0 01-2 2H10a2 2 0 01-2-2V10a2 2 0 012-2z" fill="white" opacity=".9"/><path d="M18 8v6h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs></svg>
+        </span>
+        <span class="nav__logo-text">PDF<span class="text-gradient">Master</span></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="#tools" class="nav__link">Tools</a></li>
+        <li><a href="about.html" class="nav__link">About Us</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+        <li><a href="privacy-policy.html" class="nav__link">Privacy Policy</a></li>
+        <li><a href="disclaimer.html" class="nav__link">Disclaimer</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="nav__hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="hero__badge">100% Free · No Installation</span>
+          <h1 class="hero__title">Every PDF Tool You Need — <span class="text-gradient">In One Place</span></h1>
+          <p class="hero__desc">Merge, split, compress, convert, sign, and edit PDF files online. Fast, secure, and beautifully simple — works on any device.</p>
+          <div class="hero__cta">
+            <a href="#tools" class="btn btn--primary btn--lg">Start Editing PDFs</a>
+            <a href="#tools" class="btn btn--outline btn--lg">Explore Tools</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat"><strong>30+</strong><span>PDF Tools</span></div>
+            <div class="hero__stat"><strong>10M+</strong><span>Files Processed</span></div>
+            <div class="hero__stat"><strong>256-bit</strong><span>Encryption</span></div>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__illustration">
+            <svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="60" y="40" width="200" height="260" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="2"/>
+              <rect x="80" y="70" width="120" height="8" rx="4" fill="var(--primary)"/>
+              <rect x="80" y="90" width="160" height="6" rx="3" fill="var(--text-muted)"/>
+              <rect x="80" y="106" width="140" height="6" rx="3" fill="var(--text-muted)"/>
+              <rect x="80" y="122" width="150" height="6" rx="3" fill="var(--text-muted)"/>
+              <rect x="140" y="160" width="180" height="240" rx="12" fill="var(--card-bg)" stroke="url(#heroGrad)" stroke-width="3" class="hero-doc-float"/>
+              <rect x="160" y="190" width="100" height="10" rx="5" fill="url(#heroGrad)"/>
+              <rect x="160" y="212" width="140" height="6" rx="3" fill="var(--text-muted)"/>
+              <rect x="160" y="228" width="120" height="6" rx="3" fill="var(--text-muted)"/>
+              <circle cx="280" cy="120" r="40" fill="url(#heroGrad)" opacity=".2"/>
+              <path d="M260 120l15 15 30-35" stroke="url(#heroGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF Tools Section -->
+    <section class="tools section" id="tools">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Our Tools</span>
+          <h2 class="section__title">All the PDF Tools You'll Ever Need</h2>
+          <p class="section__desc">Choose from 30+ professional tools to edit, convert, and manage your PDF documents.</p>
+        </div>
+        <div class="tools__grid" id="toolsGrid">
+          <!-- Tools injected by script.js for maintainability; fallback in HTML -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Why PDFMaster</span>
+          <h2 class="section__title">Built for Speed, Security & Simplicity</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--speed">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Fast Processing</h3>
+            <p>Optimized engines process your files in seconds, not minutes.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay">
+            <div class="feature-card__icon feature-card__icon--secure">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Secure Files</h3>
+            <p>256-bit SSL encryption. Files auto-deleted after processing.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay-2">
+            <div class="feature-card__icon feature-card__icon--cloud">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+            </div>
+            <h3>Cloud Based</h3>
+            <p>Access your tools anywhere — no downloads or installations.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--mobile">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3>Mobile Friendly</h3>
+            <p>Fully responsive design works perfectly on phones and tablets.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay">
+            <div class="feature-card__icon feature-card__icon--easy">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>Easy to Use</h3>
+            <p>Drag, drop, and download. Intuitive interface for everyone.</p>
+          </article>
+          <article class="feature-card reveal reveal--delay-2">
+            <div class="feature-card__icon feature-card__icon--install">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>No Installation Needed</h3>
+            <p>Works entirely in your browser. Start instantly, zero setup.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">How It Works</span>
+          <h2 class="section__title">Four Simple Steps to PDF Success</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__number">01</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h3>Upload PDF</h3>
+            <p>Drag and drop your file or click to browse from your device.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay">
+            <div class="step__number">02</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3>Choose Tool</h3>
+            <p>Select from 30+ tools — merge, split, convert, sign, and more.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay-2">
+            <div class="step__number">03</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
+            <h3>Process File</h3>
+            <p>Our servers handle the heavy lifting with blazing-fast speed.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step reveal reveal--delay-3">
+            <div class="step__number">04</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3>Download Result</h3>
+            <p>Get your processed file instantly. No watermarks on free tier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">FAQ</span>
+          <h2 class="section__title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq__list" id="faqList">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Is my PDF secure?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Yes. All transfers use 256-bit SSL encryption. Your files are automatically deleted from our servers within one hour of processing. We never share your documents with third parties.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can I use the tools for free?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Absolutely. All core PDF tools are free to use with reasonable file size limits. Premium plans unlock larger files, batch processing, and priority speed.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Does it work on mobile?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Yes. PDFMaster is fully responsive and works on iOS, Android, tablets, and all modern browsers including Chrome, Safari, Firefox, and Edge.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>How fast is processing?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Most operations complete in under 30 seconds depending on file size. Compress and merge operations on typical documents finish in just a few seconds.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Are files stored permanently?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>No. Files are temporarily stored only during processing and are permanently deleted within 60 minutes. We do not retain copies of your documents.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Which formats are supported?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>We support PDF, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), JPG, PNG, HTML, and PDF/A. Additional formats are added regularly based on user demand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner section">
+      <div class="container">
+        <div class="cta-banner__inner reveal">
+          <h2>Ready to Transform Your PDFs?</h2>
+          <p>Join millions of users who trust PDFMaster for fast, secure document processing.</p>
+          <a href="#tools" class="btn btn--white btn--lg">Get Started Free</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <span class="nav__logo-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#logoGrad2)"/><path d="M10 8h8l6 6v10a2 2 0 01-2 2H10a2 2 0 01-2-2V10a2 2 0 012-2z" fill="white" opacity=".9"/><defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs></svg>
+          </span>
+          PDF<span class="text-gradient">Master</span>
+        </a>
+        <p>Professional online PDF tools. Fast, secure, and free for everyone.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@pdfmaster.com">support@pdfmaster.com</a></p>
+        <p>123 Document Street<br>San Francisco, CA 94102</p>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 PDFMaster. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
